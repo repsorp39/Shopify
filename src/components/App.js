@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Boutique from "../pages/Boutique";
 import Home from "../pages/Home";
 import About from "../pages/About";
@@ -25,7 +25,7 @@ const App = () => {
    }, [isLogin]);
    return (
       <React.Fragment>
-         <BrowserRouter>
+         <HashRouter>
             <Header
                isLogin={isLogin}
                setAsLogin={setAsLogin}
@@ -58,7 +58,7 @@ const App = () => {
 
                <Route path="*" element={<Home isLogin={isLogin} />} />
             </Routes>
-         </BrowserRouter>
+         </HashRouter>
       </React.Fragment>
    );
 };
