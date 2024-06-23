@@ -1,0 +1,59 @@
+@import "./settings.scss";
+h1 {
+    text-align: center;
+    margin-top: 150px;
+    @media screen and (max-width: 1035px) {
+        margin-top: 15px;
+    }
+}
+
+form {
+    font-family: $fontRegular;
+    width: 450px;
+    margin: auto;
+    padding: 25px;
+    background-color: $VeryDarkDesaturated;
+    border: 1px solid;
+    @media screen and (max-width: 600px) {
+        width: 380px;
+    }
+    @media screen and (max-width: 460px) {
+        width: 320px;
+    }
+    div {
+        margin: 20px 0;
+    }
+    label {
+        display: block;
+        font-size: 20px;
+        margin: 5px;
+        color: white;
+    }
+    input {
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        border: 1px solid $DarkGrayishBlue;
+    }
+    button {
+        @include btn-style;
+        width: 100%;
+        margin-top: 30px;
+        padding: 10px;
+        background-color: rgb(0, 187, 56);
+        font-family: $fontBold;
+    }
+}
+
+.error-form {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(253, 86, 86);
+}
+
+.loadingState {
+    img {
+        width: 55px;
+        margin-left: 15px;
+    }
+}

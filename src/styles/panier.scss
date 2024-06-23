@@ -1,0 +1,36 @@
+@import "../styles/settings.scss";
+.panier {
+    h1 {
+        font-size: 55px;
+        font-family: $fontInconso;
+    }
+}
+
+.cart {
+    ul {
+        list-style: none;
+    }
+    ol {
+        list-style-type: disc;
+        margin-bottom: 35px;
+    }
+    li {
+        text-transform: capitalize;
+        font-size: 18px;
+    }
+    span {
+        font-family: $fontInconso;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    h4 {
+        font-family: $fontMedium;
+        padding: 3px;
+        text-align: center;
+        background-color: rgb(7, 0, 70);
+        color: white;
+    }
+    .total {
+        background-color: $ligher;
+    }
+}

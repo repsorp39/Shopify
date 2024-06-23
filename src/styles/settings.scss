@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @media screen and (max-width: 600px) {
+        padding: 15px;
+    }
+}
+
+
+/*
+*Color Palettes
+**/
+
+//LightTheme
+$VeryLightGrayishBlue: hsl(236, 33%, 92%);
+$DarkGrayishBlue: hsl(236, 9%, 61%);
+$VeryDarkrayisBlue: hsl(235, 19%, 35%);
+//DarkTheme
+$VeryDarkBlue: hsl(235, 21%, 11%);
+$VeryDarkDesaturated: hsl(235, 24%, 19%);
+$LightGrayishBlue: hsl(234, 39%, 85%);
+$LightGrayish: hsl(236, 33%, 92%);
+$DarkGrayishBlue: hsl(234, 11%, 52%);
+$VeryDarkGrayishBlue: hsl(233, 14%, 35%);
+$VeryDarkGrayishBlue: hsl(237, 14%, 26%);
+$ligher: hsl(143, 95%, 64%);
+$danger: rgb(100, 99, 99);
+@mixin d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin btn-style {
+    border: none;
+    border-radius: 7px;
+}
+
+@font-face {
+    font-family: "Rh-bold";
+    src: url(../assets/fonts/RedHatText-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Rh-medium";
+    src: url(../assets/fonts/RedHatText-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Rh-regular";
+    src: url(../assets/fonts/RedHatText-Regular.ttf);
+}
+
+@font-face {
+    font-family: "kaushan";
+    src: url(../assets/fonts/KaushanScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: "inconsolata";
+    src: url(../assets/fonts/Inconsolata_UltraCondensed-ExtraBold.ttf);
+}
+
+$fontRegular: "Rh-regular";
+$fontBold: "Rh-bold";
+$fontMedium: "Rh-medium";
+$fontKaushan: "kaushan";
+$fontInconso: "inconsolata";
