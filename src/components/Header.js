@@ -20,9 +20,9 @@ const Header = ({ isLogin, setAsLogin, pseudo, setPseudo }) => {
                }}
             >
                {isClicked ? (
-                  <i class="bi bi-x-lg"></i>
+                  <i className="bi bi-x-lg"></i>
                ) : (
-                  <i class="bi bi-list"></i>
+                  <i className="bi bi-list"></i>
                )}
             </button>
          </div>
