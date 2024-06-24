@@ -25,7 +25,7 @@ const App = () => {
    }, [isLogin]);
    return (
       <React.Fragment>
-         <BrowserRouter basename="/shopify">
+         <BrowserRouter basename="/shopper">
             <Header
                isLogin={isLogin}
                setAsLogin={setAsLogin}
