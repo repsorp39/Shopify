@@ -33,7 +33,7 @@ const App = () => {
                setPseudo={setPseudo}
             />
             <Routes>
-               <Route path="/shopper" element={<Home isLogin={isLogin} />} />
+               <Route path="/" element={<Home isLogin={isLogin} />} />
                <Route
                   path="/login"
                   element={
