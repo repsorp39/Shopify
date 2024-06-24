@@ -25,7 +25,7 @@ const App = () => {
    }, [isLogin]);
    return (
       <React.Fragment>
-         <BrowserRouter>
+         <BrowserRouter basename="/shopper">
             <Header
                isLogin={isLogin}
                setAsLogin={setAsLogin}
@@ -33,7 +33,7 @@ const App = () => {
                setPseudo={setPseudo}
             />
             <Routes>
-               <Route path="/shopper/" element={<Home isLogin={isLogin} />} />
+               <Route path="/shopper" element={<Home isLogin={isLogin} />} />
                <Route
                   path="/login"
                   element={
