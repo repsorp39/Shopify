@@ -5,8 +5,11 @@ import loader from "../assets/images/loader.gif";
 import { useNavigate } from "react-router-dom";
 
 const Login = ({ setPseudo, setAsLogin }) => {
-   const [username, setUsername] = useState("");
-   const [password, setPassword] = useState("");
+
+   //as an app test I provide a pseudo pwd and username for test
+   const [username, setUsername] = useState("johnd");
+   const [password, setPassword] = useState("m38rmF$");
+
    const [usernameError, setUsernameError] = useState("");
    const [incorrectPassword, setPasswordIncorrect] = useState(false);
    const navigate = useNavigate(); /*Permet de faire des redirections  */
@@ -71,7 +74,7 @@ const Login = ({ setPseudo, setAsLogin }) => {
                <input
                   type="text"
                   id="username"
-                  placeholder="johnd"
+                  value={username}
                   onChange={(event) => setUsername(event.target.value)}
                />
                {usernameError && (
@@ -84,7 +87,7 @@ const Login = ({ setPseudo, setAsLogin }) => {
                <label htmlFor="password">Password</label>
                <input
                   type="password"
-                  placeholder="m38rmF$"
+                  value={password}
                   onChange={(event) => setPassword(event.target.value)}
                />
                {incorrectPassword && (

@@ -6,7 +6,7 @@ const BackButton = () => {
    return (
       <div className="mb-3">
          <button
-            onClick={(e) => {
+            onClick={() => {
                navigate(-1);
             }}
          >

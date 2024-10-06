@@ -6,9 +6,13 @@
     }
     h1 {
         img {
-            width: 300px;
+            width: 240px;
             @media screen and (max-width: 400px) {
                 width: 200px;
+            }
+            @media screen and (min-width: 400px) and (max-width:1040px) {
+                width: 200px;
+                margin-top: 50px;
             }
         }
     }
@@ -30,6 +34,7 @@
         margin-bottom: 60px;
         color: $VeryDarkGrayishBlue;
         background-color: $LightGrayishBlue;
+
         @media screen and (max-width: 1000px) {
             flex-direction: column;
             justify-content: space-between;
@@ -66,7 +71,7 @@
 
 .products {
     h2 {
-        font-size: 70px;
+        font-size: 40px;
         font-family: $fontInconso;
         text-align: center;
         @media screen and (max-width: 800px) {
