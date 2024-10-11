@@ -8,3 +8,4 @@ This is a simple online store built with React, utilizing the Fake API to simula
 - **Product Details**: View detailed information about each product.
 - **User Authentication**: Sign up, log in, and log out of your account.
 
+Demo: [https://shopify-915y.onrender.com/](https://shopify-915y.onrender.com/) ... it can take a couple of time to load if nobody visited since a while because of hosting terms. So wait..
